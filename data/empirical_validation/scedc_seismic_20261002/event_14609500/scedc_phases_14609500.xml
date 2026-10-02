@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
+  <eventParameters publicID="smi:local/7cc581b7-ef06-49a4-ad7f-057e119d8c03">
+    <event publicID="smi:local/14609500">
+      <type>earthquake</type>
+      <origin publicID="smi:local/0dd0919a-a74b-4b5c-8567-9d236979c9cd">
+        <time>
+          <value>2010-04-05T02:54:34.450000Z</value>
+        </time>
+        <latitude>
+          <value>32.4728</value>
+        </latitude>
+        <longitude>
+          <value>-115.6293</value>
+        </longitude>
+        <depth>
+          <value>13.77</value>
+        </depth>
+      </origin>
+      <magnitude publicID="smi:local/3395fb8c-d058-41aa-8034-ec12488fdb4c">
+        <mag>
+          <value>4.25</value>
+        </mag>
+        <type>ML</type>
+      </magnitude>
+      <pick publicID="smi:local/83fb2486-aec5-4c48-aabe-b07e53424f41">
+        <time>
+          <value>2010-04-05T02:54:39.918000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="ERP" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/c960b7e9-8f7d-45ee-9930-9fd7d712277e">
+        <time>
+          <value>2010-04-05T02:54:40.217000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WES" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/56aeebd3-d656-4db2-98e9-42393285fe6d">
+        <time>
+          <value>2010-04-05T02:54:44.838000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WES" locationCode="--" channelCode="HHN"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/344bc6f2-ac83-4cb0-a40a-2b60f8716fb5">
+        <time>
+          <value>2010-04-05T02:54:40.190000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="YUH" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/a2e1679e-c450-48d9-8d6d-d157e0c8b91b">
+        <time>
+          <value>2010-04-05T02:54:41.975000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="DRE" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/06896bc6-0a79-43b9-b321-68129ac8f74f">
+        <time>
+          <value>2010-04-05T02:54:41.969000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="COK" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/7dffdf30-2b9c-47c6-9753-f305bd0b9fd6">
+        <time>
+          <value>2010-04-05T02:54:43.389000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SWS" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/71c3dc6e-fee9-4e29-9565-1b6b9326765a">
+        <time>
+          <value>2010-04-05T02:54:49.557000Z</value>
+          <upperUncertainty>0.03</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SWS" locationCode="--" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/782396d7-8a3c-46eb-9e3f-7675517ccd84">
+        <time>
+          <value>2010-04-05T02:54:43.780000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="CRR" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/f116335b-9387-4148-80d2-9fdd7c2abdf2">
+        <time>
+          <value>2010-04-05T02:54:45.670000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="COA" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/cd62e781-3ea1-4aa9-bb87-96fde4ce11c7">
+        <time>
+          <value>2010-04-05T02:54:46.390000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="EMS" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/7bef102d-c028-4df7-b6e8-489c35928668">
+        <time>
+          <value>2010-04-05T02:54:46.348000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="SB" stationCode="WLA" locationCode="00" channelCode="HNZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/c6e3d0b7-d3a1-4acd-a6b1-349f8123ad71">
+        <time>
+          <value>2010-04-05T02:54:55.843000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="SB" stationCode="WLA" locationCode="06" channelCode="HNE"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/1f14566c-636d-46bb-b15e-222281aafbcf">
+        <time>
+          <value>2010-04-05T02:54:46.207000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BTC" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/c999188f-5155-455e-9c93-2ec41a155bf5">
+        <time>
+          <value>2010-04-05T02:54:54.692000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BTC" locationCode="--" channelCode="HNN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/51d5b982-3ed9-4aa9-a6fb-b3ac3c0a8fb8">
+        <time>
+          <value>2010-04-05T02:54:46.708000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="YOU" locationCode="06" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/b1dc2aed-d6b4-4709-9fb5-d928fca721e3">
+        <time>
+          <value>2010-04-05T02:54:47.049000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="ERR" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/c5cc9270-a9d7-433c-ab4d-079c2cd831ac">
+        <time>
+          <value>2010-04-05T02:54:56.678000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="ERR" locationCode="--" channelCode="HHE"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/d100e772-cc4e-44a6-a79a-e4b946b24110">
+        <time>
+          <value>2010-04-05T02:54:46.870000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="CLI" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/591a4242-0cf1-46b4-b166-18f12cd509ec">
+        <time>
+          <value>2010-04-05T02:54:47.098000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="LIN" locationCode="06" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/7e5862bc-4c13-4467-b893-2699ec0720cc">
+        <time>
+          <value>2010-04-05T02:54:56.353000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="LIN" locationCode="06" channelCode="EH2"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/d49a8f97-9b41-4aeb-b4a4-98b15d4dd164">
+        <time>
+          <value>2010-04-05T02:54:46.918000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="ENG" locationCode="06" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/894bc93f-449a-44c0-b462-090327080d3a">
+        <time>
+          <value>2010-04-05T02:54:47.388000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="CBK" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/9019790c-113e-49e1-a7c2-c74a2f1ceea1">
+        <time>
+          <value>2010-04-05T02:54:47.077000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="HAT" locationCode="06" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/64b6da00-c734-471f-99c9-985258814046">
+        <time>
+          <value>2010-04-05T02:54:47.055000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="ELM" locationCode="06" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/9fae6119-c735-47f8-8653-a9054a4b3084">
+        <time>
+          <value>2010-04-05T02:54:47.218000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="NP" stationCode="5062" locationCode="--" channelCode="HLZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/c6468523-3032-49ef-b3ef-bcdd6c314bad">
+        <time>
+          <value>2010-04-05T02:54:57.129000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="NP" stationCode="5062" locationCode="--" channelCode="HLN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/8fab1f76-62a8-4391-9287-e11e1fd96434">
+        <time>
+          <value>2010-04-05T02:54:47.228000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="RXH" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/01a1c6dc-b3be-4a5a-b7be-3438f61bf007">
+        <time>
+          <value>2010-04-05T02:54:56.972000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="RXH" locationCode="--" channelCode="HHE"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/e5913296-20c1-401e-9788-15252e9506ab">
+        <time>
+          <value>2010-04-05T02:54:47.565000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="EN" stationCode="RED" locationCode="06" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/694f60e0-12ce-4846-a01e-5728ab5d0903">
+        <time>
+          <value>2010-04-05T02:54:47.769000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="RUN" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/bd2e010c-5be2-4f01-8f5f-be091ea0ff35">
+        <time>
+          <value>2010-04-05T02:54:49.126000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="AZ" stationCode="MONP2" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/3108dc73-131b-476a-b4fb-44f903c78e3d">
+        <time>
+          <value>2010-04-05T02:54:58.972000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="AZ" stationCode="MONP2" locationCode="--" channelCode="HHE"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/1442a78e-4c3c-4fea-b4f3-453614c98faf">
+        <time>
+          <value>2010-04-05T02:54:48.689000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="WI2" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/9cb04809-4cb6-498b-aa98-c011671e8408">
+        <time>
+          <value>2010-04-05T02:54:49.830000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SAL" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/90ea874f-f345-41d3-bab7-180e89945ed1">
+        <time>
+          <value>2010-04-05T02:55:01.647000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SAL" locationCode="--" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/88ebb7ae-f6cd-406c-9572-82286bf6d584">
+        <time>
+          <value>2010-04-05T02:54:49.900000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="NP" stationCode="5271" locationCode="--" channelCode="HLZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/30e45ac5-b976-421d-9eab-9658a7977d13">
+        <time>
+          <value>2010-04-05T02:55:02.158000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="NP" stationCode="5271" locationCode="--" channelCode="HLN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/3076f553-ea1d-41dd-ac0d-17fb21e04278">
+        <time>
+          <value>2010-04-05T02:54:50.175000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="GLA" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/fb15974c-4206-47e8-b7c0-07290918ff3e">
+        <time>
+          <value>2010-04-05T02:55:01.647000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="GLA" locationCode="--" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/8f1a929c-8505-462e-8e21-3cb226991a29">
+        <time>
+          <value>2010-04-05T02:54:50.054000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BOM" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/645216d0-8da1-437a-9909-8a9b1bd1c855">
+        <time>
+          <value>2010-04-05T02:54:51.398000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BAR" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/3b6bbdff-5261-404b-bc7d-dd6b348b957d">
+        <time>
+          <value>2010-04-05T02:55:02.836000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BAR" locationCode="--" channelCode="HHN"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/4475869b-789c-4c63-8b1f-b6a1bef6a4fc">
+        <time>
+          <value>2010-04-05T02:54:50.968000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="YMD" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/69d18c69-f9be-4e9d-92fa-4f8418e1d233">
+        <time>
+          <value>2010-04-05T02:54:50.260000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="FRK" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/207f5352-a7b0-4536-ae39-fcc6e4e1eb6d">
+        <time>
+          <value>2010-04-05T02:54:51.666000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BAT" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/0e106124-ae5a-4c47-9335-01778d3f19a8">
+        <time>
+          <value>2010-04-05T02:54:52.988000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="JEM" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/2de538d2-752d-4e09-8f7f-85294e948f39">
+        <time>
+          <value>2010-04-05T02:55:06.218000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="JEM" locationCode="--" channelCode="HHN"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>S</phaseHint>
+      </pick>
+      <pick publicID="smi:local/97501302-6b09-4d2b-9d72-518622030c35">
+        <time>
+          <value>2010-04-05T02:54:52.036000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SLB" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/53610598-5554-48b7-bc93-dcfc59d31845">
+        <time>
+          <value>2010-04-05T02:54:52.446000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BOR" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/b43d8bb7-31e5-46f4-8606-4893b017d002">
+        <time>
+          <value>2010-04-05T02:54:54.853000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="OLP" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/7894e8d8-16d5-4267-9f6b-5918b5bbdaa0">
+        <time>
+          <value>2010-04-05T02:54:54.535000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="EML" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/ce16db0d-609e-4396-ab3f-ae7f832f736a">
+        <time>
+          <value>2010-04-05T02:54:53.447000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="NSS2" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/cf075ab3-4f58-431d-8ed0-7b67764d65e7">
+        <time>
+          <value>2010-04-05T02:54:55.279000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SDR" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/0a8b4bc8-687e-43a7-ad9c-40de581c68bd">
+        <time>
+          <value>2010-04-05T02:54:54.938000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="AZ" stationCode="LVA2" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/98af1571-5c48-4f56-8ffd-9f106e36a5c5">
+        <time>
+          <value>2010-04-05T02:54:54.584000Z</value>
+          <upperUncertainty>0.0</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="BC3" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/ddfaed39-15e4-4863-b599-064e193d8c08">
+        <time>
+          <value>2010-04-05T02:54:54.557000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="TOR" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/8176c3ab-1f9b-43f6-8c63-40c73689af14">
+        <time>
+          <value>2010-04-05T02:54:54.788000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="CTW" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/39ba4fd5-c6fd-48ac-b32e-f476bc8403a1">
+        <time>
+          <value>2010-04-05T02:54:56.146000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="DPP" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/a3b9a59f-e8a8-4530-8dc8-dac8e24ed574">
+        <time>
+          <value>2010-04-05T02:54:55.688000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="AZ" stationCode="TRO" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/78c8da72-7876-4543-ad79-104a8c771630">
+        <time>
+          <value>2010-04-05T02:54:56.503000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="AZ" stationCode="HWB" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+      <pick publicID="smi:local/2b07be55-135e-4dba-a21b-7152ee730d35">
+        <time>
+          <value>2010-04-05T02:54:58.132000Z</value>
+          <upperUncertainty>0.02</upperUncertainty>
+        </time>
+        <waveformID networkCode="CI" stationCode="SDG" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>emergent</onset>
+        <phaseHint>P</phaseHint>
+      </pick>
+      <pick publicID="smi:local/76d38a43-fef8-4f6f-b3ff-84c8ec159496">
+        <time>
+          <value>2010-04-05T02:54:56.577000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="PB" stationCode="B087" locationCode="--" channelCode="EHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>negative</polarity>
+      </pick>
+      <pick publicID="smi:local/7f9019e7-5ebf-4c69-9971-97a9c6a29857">
+        <time>
+          <value>2010-04-05T02:54:57.848000Z</value>
+          <upperUncertainty>0.01</upperUncertainty>
+        </time>
+        <waveformID networkCode="AZ" stationCode="CPE" locationCode="--" channelCode="HHZ"></waveformID>
+        <onset>impulsive</onset>
+        <phaseHint>P</phaseHint>
+        <polarity>positive</polarity>
+      </pick>
+    </event>
+  </eventParameters>
+</q:quakeml>

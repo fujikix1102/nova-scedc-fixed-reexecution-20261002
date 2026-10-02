@@ -1,0 +1,129 @@
+{
+  "bundle_id": "NOVA_SCEDC_FIXED_REEXECUTION_20261002_V1",
+  "runner": {
+    "path": "third_party_reexecution/run_scedc_fixed_phase_parity_v1.py",
+    "sha256": "6e9ac1da1aafa0f9f6930a5a7f93701ae89e861371f63bd77e76770902be18d3"
+  },
+  "result": {
+    "path": "output/nova_scedc_fixed_runner_phase_parity_20261002_v1.json",
+    "sha256": "43e5321a05e5bc29ded69e3b262c3843cb5616a88399ae7dd5d8a742ad8ef7f2"
+  },
+  "inputs": [
+    {
+      "event": "14608980",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14608980/CI_BOM_BHZ.mseed",
+      "sha256": "0937b76b68cdc49e1311d24ad8e89736b1a9069cd6ce0e60736486d4f76ca8a9"
+    },
+    {
+      "event": "14608980",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14608980/CI_BOR_BHZ.mseed",
+      "sha256": "4fc2346d7c70c8d20e65f4bf2734db28e7b45c4691beaa6a2ec9bb5ce5308d09"
+    },
+    {
+      "event": "14608980",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14608980/CI_DRE_BHZ.mseed",
+      "sha256": "4145bbd2b6f63ce6f1af7b161b9eba543975581d479b80394e935c6787f52895"
+    },
+    {
+      "event": "14608980",
+      "role": "phase",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14608980/scedc_phases_14608980.xml",
+      "sha256": "13afef0571b224c239157b255382b619e9d7dbbacf0a6f9d9896c8ba1c533a49"
+    },
+    {
+      "event": "14609500",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14609500/CI_BOM_BHZ.mseed",
+      "sha256": "8d01164a146046b3852098e4bdbf814a4f968539dd78057e4442a9f497cfb5ad"
+    },
+    {
+      "event": "14609500",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14609500/CI_BOR_BHZ.mseed",
+      "sha256": "cd48ce39800501df785f9b3ed33497cba883db0d9356c6d92a8a459b8c4122ff"
+    },
+    {
+      "event": "14609500",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14609500/CI_DRE_BHZ.mseed",
+      "sha256": "c0f2d51ecd0080145054fa0c7283a7a8ce496b049b6f59e3907736e385270c17"
+    },
+    {
+      "event": "14609500",
+      "role": "phase",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14609500/scedc_phases_14609500.xml",
+      "sha256": "cfae6d3769f5d57fe36f3e60d41af25fae55b111293a10040b219d2b5ae2994b"
+    },
+    {
+      "event": "14609660",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_ci14609660_eventwindow/CI_BOM_BHZ.mseed",
+      "sha256": "dd27f8f9f7b71f6d24d0ab21c195a05efadba6d14d60a841a37e845deed87843"
+    },
+    {
+      "event": "14609660",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_ci14609660_eventwindow/CI_BOR_BHZ.mseed",
+      "sha256": "da69b2c24cb3b6de1f4a0369f8150c1a249bcf23d1753c62a0dbab5f3b761d50"
+    },
+    {
+      "event": "14609660",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_ci14609660_eventwindow/CI_CTC_BHZ.mseed",
+      "sha256": "7a1f9f758941e552841858f0bac1441f3d8cab05f42ae0a084b49853ce4ece6c"
+    },
+    {
+      "event": "14609660",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_ci14609660_eventwindow/CI_DRE_BHZ.mseed",
+      "sha256": "a572e424cc40e16202f03670a30170c1e36a46c5e02a8efe6f5f95c2ca2f2d6e"
+    },
+    {
+      "event": "14609660",
+      "role": "phase",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_ci14609660/scedc_phases_14609660.xml",
+      "sha256": "550dbd5f632380ba1bee4c530107b5506df8d9e36544edacefbb0d18e3957094"
+    },
+    {
+      "event": "14610172",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14610172/CI_BOM_BHZ.mseed",
+      "sha256": "489f198c64a526e67cba5e7329f605d63b70c2ca6c215144deb6840b771ccd8a"
+    },
+    {
+      "event": "14610172",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14610172/CI_BOR_BHZ.mseed",
+      "sha256": "a0fda429d0cb4a0088cbb2fbdbcdc36edec6b166182773d3f76deb4909c83c32"
+    },
+    {
+      "event": "14610172",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14610172/CI_CTC_BHZ.mseed",
+      "sha256": "270d25a0fb316909220d69a9c52c6db416602798058c6fefed52e492b094f6b9"
+    },
+    {
+      "event": "14610172",
+      "role": "waveform",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14610172/CI_DRE_BHZ.mseed",
+      "sha256": "95863e4592c71a2311ceebf41fe55958c77b10142eeda1f8f78914a6a689a7a1"
+    },
+    {
+      "event": "14610172",
+      "role": "phase",
+      "path": "data/empirical_validation/scedc_seismic_20261002/event_14610172/scedc_phases_14610172.xml",
+      "sha256": "edaf5f5ed81ed5325bc32f52af9405e5b1bec31bb2682b1772a839ebd763f573"
+    }
+  ],
+  "environment": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:34:53) [Clang 19.1.7 ]",
+    "platform": "macOS-14.5-arm64-arm-64bit"
+  },
+  "reexecution_command": "python third_party_reexecution/run_scedc_fixed_phase_parity_v1.py",
+  "expected_contract": "same input hashes, same processing contract, same trigger candidates",
+  "independent_third_party_execution": "PENDING",
+  "formal_pass": false
+}

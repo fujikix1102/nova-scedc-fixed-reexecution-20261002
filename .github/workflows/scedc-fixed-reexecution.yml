@@ -1,0 +1,81 @@
+name: SCEDC fixed re-execution
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'third_party_reexecution/**'
+      - 'output/nova_scedc_fixed_reexecution_bundle_20261002_v1.json'
+      - '.github/workflows/scedc-fixed-reexecution.yml'
+
+jobs:
+  reexecute:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned runtime
+        run: python -m pip install --disable-pip-version-check obspy==1.4.1 numpy==2.1.3
+
+      - name: Verify bundle inputs
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+
+          root = Path('.')
+          bundle = json.loads((root / 'output/nova_scedc_fixed_reexecution_bundle_20261002_v1.json').read_text())
+          missing = []
+          mismatched = []
+          for item in bundle['inputs']:
+              p = root / item['path']
+              if not p.exists():
+                  missing.append(item['path'])
+                  continue
+              actual = hashlib.sha256(p.read_bytes()).hexdigest()
+              if actual != item['sha256']:
+                  mismatched.append({'path': item['path'], 'expected': item['sha256'], 'actual': actual})
+          if missing or mismatched:
+              print(json.dumps({'status': 'BLOCKED_EXTERNAL', 'missing': missing, 'mismatched': mismatched}, indent=2))
+              raise SystemExit(2)
+          print('bundle_input_hashes: PASS')
+          PY
+
+      - name: Run fixed runner
+        run: python third_party_reexecution/run_scedc_fixed_phase_parity_v1.py
+
+      - name: Verify output contract
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root = Path('.')
+          bundle = json.loads((root / 'output/nova_scedc_fixed_reexecution_bundle_20261002_v1.json').read_text())
+          result_path = root / bundle['result']['path']
+          runner_path = root / bundle['runner']['path']
+          result = json.loads(result_path.read_text())
+          checks = {
+              'runner_hash_match': hashlib.sha256(runner_path.read_bytes()).hexdigest() == bundle['runner']['sha256'],
+              'result_hash_match': hashlib.sha256(result_path.read_bytes()).hexdigest() == bundle['result']['sha256'],
+              'all_inputs_hashed': result.get('all_inputs_hashed') is True,
+              'formal_pass': result.get('formal_pass') is False,
+              'record_count': len(result.get('records', [])),
+          }
+          print(json.dumps(checks, indent=2))
+          if not all(checks[k] for k in ('runner_hash_match', 'result_hash_match', 'all_inputs_hashed', 'formal_pass')):
+              raise SystemExit(3)
+          PY
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scedc-fixed-reexecution-${{ github.run_id }}
+          path: |
+            output/nova_scedc_fixed_runner_phase_parity_20261002_v1.json
+            output/nova_scedc_fixed_reexecution_bundle_20261002_v1.json
