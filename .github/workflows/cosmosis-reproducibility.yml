@@ -1,0 +1,47 @@
+name: CosmoSIS reproducibility check
+
+on:
+  workflow_dispatch:
+    inputs:
+      cosmosis_ref:
+        description: 'CosmoSIS commit, tag, or branch'
+        required: true
+        default: 'main'
+      run_tests:
+        description: 'Run the full pytest suite'
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout NOVA
+        uses: actions/checkout@v4
+      - name: Checkout CosmoSIS
+        uses: actions/checkout@v4
+        with:
+          repository: cosmosis-developers/cosmosis
+          ref: ${{ inputs.cosmosis_ref }}
+          path: cosmosis
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install runner dependencies
+        run: python -m pip install --upgrade pip
+      - name: Validate runner
+        run: python -m py_compile tools/cosmosis_repro_runner.py
+      - name: Run CosmoSIS reproducibility check
+        if: ${{ inputs.run_tests == true }}
+        run: |
+          python tools/cosmosis_repro_runner.py \
+            --repo "$GITHUB_WORKSPACE/cosmosis" \
+            --output "$GITHUB_WORKSPACE/cosmosis-repro-output"
+      - name: Upload reproducibility output
+        if: always() && inputs.run_tests == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: cosmosis-reproducibility-${{ github.run_id }}
+          path: cosmosis-repro-output
