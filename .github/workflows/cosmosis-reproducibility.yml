@@ -31,6 +31,8 @@ jobs:
           python-version: '3.11'
       - name: Install runner dependencies
         run: python -m pip install --upgrade pip
+      - name: Install CosmoSIS
+        run: python -m pip install -e cosmosis
       - name: Validate runner
         run: python -m py_compile tools/cosmosis_repro_runner.py
       - name: Run CosmoSIS reproducibility check
