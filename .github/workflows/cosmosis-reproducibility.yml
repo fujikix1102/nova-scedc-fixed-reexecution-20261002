@@ -32,7 +32,7 @@ jobs:
       - name: Install runner dependencies
         run: python -m pip install --upgrade pip
       - name: Install CosmoSIS
-        run: python -m pip install -e cosmosis
+        run: python -m pip install -e cosmosis astropy getdist numdifftools derivative iminuit
       - name: Validate runner
         run: python -m py_compile tools/cosmosis_repro_runner.py
       - name: Run CosmoSIS reproducibility check
