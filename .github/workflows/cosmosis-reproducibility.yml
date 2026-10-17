@@ -40,6 +40,10 @@ jobs:
           echo "COSMOSIS_ALT_COMPILERS=$COSMOSIS_ALT_COMPILERS" >> "$GITHUB_ENV"
           echo "LIBRARY_PATH=$LIBRARY_PATH" >> "$GITHUB_ENV"
           echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH" >> "$GITHUB_ENV"
+      - name: Build native sampler libraries
+        run: |
+          make -C cosmosis/cosmosis/samplers/multinest
+          make -C cosmosis/cosmosis/samplers/polychord
       - name: Validate runner
         run: python -m py_compile tools/cosmosis_repro_runner.py
       - name: Run CosmoSIS reproducibility check
